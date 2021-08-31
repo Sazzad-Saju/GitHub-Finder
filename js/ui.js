@@ -10,7 +10,7 @@ class UI {
                     <div class="col-md-3 text-center my-3">
                         <img class="img-fluid mb-2" src="${user.avatar_url}">
                         <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block mt-3 me-2">View Profile</a>
-                        <a href="/repo.html" class="btn btn-primary btn-block mt-3">View Repos</a>
+                        <a href="repo.html" class="btn btn-primary btn-block mt-3">View Repos</a>
                     </div>
                     <div class="col-md-9 mt-3 mx-auto">
                     <div class= "text-center">
