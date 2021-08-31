@@ -6,7 +6,7 @@ let totalRepo = userData.totalRepo;
 if (totalRepo > 30) {
     totalRepo = "30+";
 }
-localStorage.clear(userData);
+// localStorage.clear(userData);
 
 // Get Repo data
 if (userName != "") {
@@ -18,7 +18,7 @@ if (userName != "") {
             } else {
                 showBanner(data);
                 showRepos(data);
-                console.log(data);
+                // console.log(data);
             }
         })
 }
@@ -41,38 +41,38 @@ function showRepos(repos) {
         <div class="row pd-2">
                 <div class="col-md-4 py-2 mx-auto">
                     <div class="card repo-card repo-anim border border-light">
-                        <div class="card-body btn repo-anim">
+                        <a class="card-body btn repo-anim" href = "https://github.com/${userName}/${repos[i].name}">
                             <div class="col ms-2" style="text-align: justify;">
                                 <strong>${repos[i].name}</strong> <br>
                                 <small><i>Language: ${repos[i].language}</i></small> <br>
                                 <small>Created at: ${repos[i].created_at}</small> <br>
                                 <small>Fork: ${repos[i].fork}</small>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 py-2 mx-auto">
                     <div class="card repo-card repo-anim border border-light">
-                        <div class="card-body btn repo-anim">
+                        <a class="card-body btn repo-anim" href = "https://github.com/${userName}/${repos[i+1].name}">
                             <div class="col ms-2" style="text-align: justify;">
                                 <strong>${repos[i+1].name}</strong> <br>
                                 <small><i>Language: ${repos[i+1].language}</i></small> <br>
                                 <small>Created at: ${repos[i+1].created_at}</small> <br>
                                 <small>Fork: ${repos[i+1].fork}</small>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 py-2 mx-auto">
                     <div class="card repo-card repo-anim border border-light">
-                        <div class="card-body btn repo-anim">
+                        <a class="card-body btn repo-anim" href = "https://github.com/${userName}/${repos[i+2].name}">
                             <div class="col ms-2" style="text-align: justify;">
                                 <strong>${repos[i+2].name}</strong> <br>
                                 <small><i>Language: ${repos[i+2].language}</i></small> <br>
                                 <small>Created at: ${repos[i+2].created_at}</small> <br>
                                 <small>Fork: ${repos[i+2].fork}</small>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -82,26 +82,26 @@ function showRepos(repos) {
         <div class="row  pd-2">
             <div class="col-md-4 py-2 mx-auto">
                 <div class="card repo-card repo-anim border border-light">
-                    <div class="card-body btn repo-anim">
+                    <a class="card-body btn repo-anim" href = "https://github.com/${userName}/${repos[i].name}">
                         <div class="col ms-2" style="text-align: justify;">
                             <strong>${repos[i].name}</strong> <br>
                             <small><i>Language: ${repos[i].language}</i></small> <br>
                             <small>Created at: ${repos[i].created_at}</small> <br>
                             <small>Fork: ${repos[i].fork}</small>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 py-2 mx-auto">
                 <div class="card repo-card repo-anim border border-light">
-                    <div class="card-body btn repo-anim">
+                    <a class="card-body btn repo-anim" "https://github.com/${userName}/${repos[i+1].name}">
                         <div class="col ms-2" style="text-align: justify;">
                             <strong>${repos[i+1].name}</strong> <br>
                             <small><i>Language: ${repos[i+1].language}</i></small> <br>
                             <small>Created at: ${repos[i+1].created_at}</small> <br>
                             <small>Fork: ${repos[i+1].fork}</small>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -111,14 +111,14 @@ function showRepos(repos) {
         <div class="row  pd-2">
             <div class="col-md-4 py-2 mx-auto">
                 <div class="card repo-card repo-anim border border-light">
-                    <div class="card-body btn repo-anim">
+                    <a class="card-body btn repo-anim" href = "https://github.com/${userName}/${repos[i].name}">
                         <div class="col ms-2" style="text-align: justify;">
                             <strong>${repos[i].name}</strong> <br>
                             <small><i>Language: ${repos[i].language}</i></small> <br>
                             <small>Created at: ${repos[i].created_at}</small> <br>
                             <small>Fork: ${repos[i].fork}</small>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
