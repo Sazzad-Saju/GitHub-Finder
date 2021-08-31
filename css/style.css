@@ -1,0 +1,17 @@
+.container-repo {
+    background-color: cadetblue;
+}
+
+.repo-anim:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.repo-card {
+    background-color: rgb(127, 192, 194);
+}
+
+.forkedProj {
+    color: rgb(198, 196, 196);
+    background-color: cadetblue;
+}
